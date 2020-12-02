@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.c                                            :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: melaouad <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/23 17:22:16 by melaouad          #+#    #+#             */
-/*   Updated: 2020/11/25 03:50:49 by melaouad         ###   ########.fr       */
+/*   Created: 2019/10/20 15:57:11 by melaouad          #+#    #+#             */
+/*   Updated: 2019/11/14 21:00:16 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include "../libft/libft.h"
-
-size_t		ft_strlen(const char *s)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t counter;
-
-	counter = 0;
-	while (*s != '\0')
-	{
-		counter++;
-		s++;
-	}
-	return (counter);
-}
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
-{
-	size_t			i;
 	unsigned char	*temp1;
 	unsigned char	*temp2;
+	size_t			i;
 
+	i = 0;
 	temp1 = (unsigned char*)s1;
 	temp2 = (unsigned char*)s2;
-	i = 0;
-	if (!s1 && !s2)
-		return (0);
-	while ((temp1[i] || temp2[i]) && i < n)
+	while (i < n)
 	{
 		if (temp1[i] != temp2[i])
 			return (temp1[i] - temp2[i]);

@@ -1,30 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.c                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: melaouad <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/23 17:22:16 by melaouad          #+#    #+#             */
-/*   Updated: 2020/11/25 03:50:49 by melaouad         ###   ########.fr       */
+/*   Created: 2019/10/20 16:00:46 by melaouad          #+#    #+#             */
+/*   Updated: 2019/11/14 22:01:38 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include "../libft/libft.h"
-
-size_t		ft_strlen(const char *s)
-{
-	size_t counter;
-
-	counter = 0;
-	while (*s != '\0')
-	{
-		counter++;
-		s++;
-	}
-	return (counter);
-}
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t			i;

@@ -6,7 +6,7 @@
 /*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 01:05:55 by melaouad          #+#    #+#             */
-/*   Updated: 2020/11/25 03:15:50 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/02 18:52:31 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,17 +53,35 @@ char **ft_tabnew(void)
         tab = NULL;
     return (tab);
 }
+void    ft_tableclear(char **tab)
+{
+    size_t i;
+
+    if(!tab)
+        return;
+    i = -1;
+    while(tab[++i])
+        free(tab[i]);
+    free(tab);
+    tab = NULL;
+}
 char **ft_tablejoin(char **tab, char *line)
 {
 
-size_t len;
-char **new_tab;
-size_t i;
-len = ft_tablecount(tab);
-new_tab = (char**)malloc(sizeof(char*) * (len + 2));
-if(!tab)
-    return (NULL)
-
+    size_t len;
+    char **new_tab;
+    size_t i;
+    len = ft_tablecount(tab);
+    new_tab = (char**)malloc(sizeof(char*) * (len + 2));
+    if(!tab)
+        return (NULL);
+    i = -1;
+    while (i++ < len)
+        new_tab[i] = ft_strdup(tab[i]);
+    new_tab[i++]=ft_strdup(line);
+    new_tab[i] = NULL;
+    ft_tableclear(tab);
+    return (new_tab);
 }
 char **ft_readfile (int fd){
     
@@ -75,9 +93,16 @@ char **ft_readfile (int fd){
     if(!tab)
         return(NULL);
     while((ret = get_next_line(fd,&line)) > 0)
-    {tab = ft_table
-        
+    {
+        tab = ft_tablejoin(tab,line);
+        free(line);
     }
+    if(*line)
+        tab = ft_tablejoin(tab,line);
+    free(line);
+    if (ret < 0)
+        return(NULL);
+    return(tab);
 }
 int ft_fileexist (char *path)
 {
@@ -99,5 +124,5 @@ char **ft_filehandler(char *filename)
         close(fd);
         return(tab);
    }
-
+    return(NULL);
 }
