@@ -6,7 +6,7 @@
 /*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 01:03:19 by melaouad          #+#    #+#             */
-/*   Updated: 2020/11/25 03:08:38 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:50:16 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,10 @@ int		ft_compare(char *s1, char *s2);
 char **ft_tabnew(void);
 int ft_checkext(char *ext);
 int		ft_compare(char *s1, char *s2);
-
+size_t  ft_tablecount(char **tab);
+void    ft_tableclear(char **tab);
 char **ft_readfile (int fd);
+char **ft_tablejoin(char **tab, char *line);
 int     ft_checkext(char *ext);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/17 22:13:03 by melaouad          #+#    #+#             */
-/*   Updated: 2020/12/05 16:42:32 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:50:22 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,5 @@
 
 
 int		get_next_line(int fd, char **line);
-
 
 #endif
