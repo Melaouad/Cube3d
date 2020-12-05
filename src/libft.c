@@ -6,12 +6,12 @@
 /*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/23 17:22:16 by melaouad          #+#    #+#             */
-/*   Updated: 2020/11/25 03:50:49 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:40:44 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "../libft/libft.h"
+#include "../headers/libft.h"
 
 size_t		ft_strlen(const char *s)
 {

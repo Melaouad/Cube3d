@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melaouad <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 15:55:27 by melaouad          #+#    #+#             */
-/*   Updated: 2019/11/14 20:57:10 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:37:54 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../headers/libft.h"
 
 int		countnbr(int n)
 {

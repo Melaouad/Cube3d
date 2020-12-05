@@ -6,12 +6,11 @@
 /*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 01:05:55 by melaouad          #+#    #+#             */
-/*   Updated: 2020/12/02 18:52:31 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:39:57 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/cub3d.h"
-#include "../headers/libft.h"
 int		ft_compare(char *s1, char *s2)
 {
 	size_t	len;

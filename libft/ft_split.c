@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melaouad <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 15:59:18 by melaouad          #+#    #+#             */
-/*   Updated: 2019/11/14 21:57:24 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:43:11 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../headers/libft.h"
 
 static int		words(char *str, char c)
 {

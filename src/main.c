@@ -6,7 +6,7 @@
 /*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 00:33:25 by melaouad          #+#    #+#             */
-/*   Updated: 2020/11/23 18:24:15 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:45:26 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int main(int ac, char **av)
          if((tab = ft_filehandler(av[1])))
         {
             printf("%d",status);
-     
         }
     }
     return 0;

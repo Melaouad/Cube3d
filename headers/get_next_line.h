@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melaouad <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: melaouad <melaouad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/17 22:13:03 by melaouad          #+#    #+#             */
-/*   Updated: 2020/01/05 17:32:05 by melaouad         ###   ########.fr       */
+/*   Updated: 2020/12/05 16:42:32 by melaouad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,14 @@
 # include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
+#include "../headers/libft.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE -1
 # endif
 
-char	*ft_strdup(const char *src);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(char *s1, char *s2);
+
 int		get_next_line(int fd, char **line);
-char	*ft_strchr(char *c1, int c2);
+
 
 #endif
