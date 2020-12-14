@@ -1,7 +1,7 @@
 NAME  = cub3d
 
 SRC_PATH= src
-SRC_NAME=	main.c helpers.c ../get_next_line/get_next_line.c ../libft/ft_memset.c \
+SRC_NAME=	main.c helpers.c tables.c ft_readfiles.c ../get_next_line/get_next_line.c ../libft/ft_memset.c \
 	   ../libft/ft_bzero.c \
 	  ../libft/ft_memcpy.c \
 	   ../libft/ft_memccpy.c \
@@ -50,7 +50,7 @@ HDR= $(addprefix $(HDR_PATH)/,$(HDR_NAME))
 # *****     flags     ***** #
 
 COM= gcc
-CFLAGE= -Wall #-Wextra -Werror
+CFLAGE= -Wall -Wextra -Werror
 HDR_INC= -I ./headers/
 
 #MLX= -lmlx -framework OpenGL -framework AppKit #-lX11
@@ -65,12 +65,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 		@$(COM) $(CFLAGE)  $(OBJ)  -o $@
-	# @echo "  _____       _           _____     _  "
-	# @echo " /  __ \     | |         |____ |   | | "
-	# @echo " | /  \/_   _| |__   ___     / / __| | " 
-	# @echo " | |   | | | | '_ \ / _ \    \ \/ _` | "
-	# @echo " | \__/\ |_| | |_) |  __/.___/ / (_| | "
-	# @echo "  \____/\__,_|_.__/ \___|\____/ \__,_| "
+	
                                     
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c $(HDR)
 	@mkdir $(OBJ_PATH) 2> /dev/null || true
